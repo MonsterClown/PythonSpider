@@ -15,7 +15,7 @@ import re
 
 
 #----配置-----------------------------------------------------------------------
-reqMode = '0'   #0->常规请求， 1->Post请求， 2->Get请求
+reqMode = '2'   #0->常规请求， 1->Post请求， 2->Get请求
 url = 'http://www.cuit.edu.cn'
 datas ={'id' : '1644'}
 User_Agent = 'Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/40.0'
