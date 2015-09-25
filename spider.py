@@ -18,19 +18,26 @@ import re
 
 reqMode = 0  #0->常规请求， 1->Post请求， 2->Get请求
 url = 'http://blog.csdn.net/pleasecallmewhy/article/details/8923067'
-datas ={'id' : '1644'#，
-#		'name' : '123'
+datas ={#'name' : '1644'，
+		'id' : '123'
 }
 headers = {
 	'User-Agent' : 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0',
 	'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
 	'Accept-Charset' : 'utf-8,ISO-8859-1',
-	'Accept-Encoding':'gzip,deflate',
+	'Accept-Encoding':'gzip,deflate'
 	'Connection':'keep-alive',
 	'Referer':None 
 }
 
 ######################################################################################
+
+
+#----函数---------------------------------------------------------------------------
+def getUrl(html):
+	a =  "<h4><a href=\"(.*)\" target=\"_blank\""
+	res = re.findall(a, html)
+	return resp
 
 
 #----普通请求-------------------------------------------------------------------------
